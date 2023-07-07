@@ -14,6 +14,8 @@
 
     --placeholderColor:rgb(214, 214, 214);
     --shadowInput: 0 0 5px rgba(255, 255, 255, 0.952);
+
+    --cardColor:#363636;
 }
 
 :root .ligthMode{
@@ -22,6 +24,8 @@
 
     --placeholderColor:rgb(58, 58, 58);
     --shadowInput: 0 0 5px rgba(255, 255, 255, 0.952);
+
+    --cardColor: #efefef;
 }
 
 html,body{
@@ -31,4 +35,14 @@ html,body{
 
 input:focus{
     outline: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+p,span,h1,h2,h3,h4,h5{
+    color: var(--textColor);
 }

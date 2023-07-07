@@ -34,7 +34,12 @@ input-busca{
     position: relative;
     width: 45px;
 }
+.carrinhoCompras h1{
+    color: white;
+    
+}
 .carrinhoCompras span{
+    color: white;
     font-weight: bolder;
     width: 22px;
     height: 22px;

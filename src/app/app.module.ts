@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { InputBuscaComponent } from './shared/input-busca/input-busca.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { ListaProdutosComponent } from './shared/lista-produtos/lista-produtos.component';
+import { ListagemProdutosComponent } from './services/listagem-produtos/listagem-produtos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     InputBuscaComponent,
-    HeaderComponent
+    HeaderComponent,
+    ListaProdutosComponent,
+    ListagemProdutosComponent
   ],
   imports: [
     BrowserModule,
