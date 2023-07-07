@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;600;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;   
+}
+
+:root{
+    --bodyColor:rgb(12, 12, 12);
+    --textColor:white;
+
+    --placeholderColor:rgb(214, 214, 214);
+    --shadowInput: 0 0 5px rgba(255, 255, 255, 0.952);
+}
+
+:root .ligthMode{
+    --bodyColor: rgb(255, 255, 255);
+    --textColor: black;
+
+    --placeholderColor:rgb(58, 58, 58);
+    --shadowInput: 0 0 5px rgba(255, 255, 255, 0.952);
+}
+
+html,body{
+    height: 100%;
+    background-color: var(--bodyColor);
+}
+
+input:focus{
+    outline: none;
+}
