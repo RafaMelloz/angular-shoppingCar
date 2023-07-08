@@ -1,57 +1,17 @@
 <section>
     <div class="container">
-        <h1>Lista de produtos</h1>
-
-        <div class="listagem">
-
-            <div class="card-produtos">
-                <img src="./assets/fone.png" alt="">
-                <hr>
-                <h2>Fone de Ouvidos</h2>
-                <h2>R$99,99</h2>
-                <button class="btn-card">Comprar</button>
+        <div class="flex">
+            <h1>Lista de produtos</h1>
+            <btn-troca-modo></btn-troca-modo>
+        </div>
+        <div class="listagem" >
+            <div class="card-produtos" *ngFor="let card of listaProdutos">
+                <img [src]="card.imagemProduto" [alt]="card.nomeProduto">
+                    <hr>
+                <h2>{{card.nomeProduto}}</h2>
+                <h2>{{card.precoProduto | currency:'R$ ':'symbol':'1.2-2'}}</h2>
+                <button class="btn-card" (click)="addCarrinho(card.id)">Comprar</button>
             </div>
-
-            <div class="card-produtos">
-                <img src="./assets/fone.png" alt="">
-                <hr>
-                <h2>Fone de Ouvidos</h2>
-                <h2>R$99,99</h2>
-                <button class="btn-card">Comprar</button>
-            </div>
-
-            <div class="card-produtos">
-                <img src="./assets/fone.png" alt="">
-                <hr>
-                <h2>Fone de Ouvidos</h2>
-                <h2>R$99,99</h2>
-                <button class="btn-card">Comprar</button>
-            </div>
-
-            <div class="card-produtos">
-                <img src="./assets/fone.png" alt="">
-                <hr>
-                <h2>Fone de Ouvidos</h2>
-                <h2>R$99,99</h2>
-                <button class="btn-card">Comprar</button>
-            </div>
-            
-            <div class="card-produtos">
-                <img src="./assets/fone.png" alt="">
-                <hr>
-                <h2>Fone de Ouvidos</h2>
-                <h2>R$99,99</h2>
-                <button class="btn-card">Comprar</button>
-            </div>
-            
-            <div class="card-produtos">
-                <img src="./assets/fone.png" alt="">
-                <hr>
-                <h2>Fone de Ouvidos</h2>
-                <h2>R$99,99</h2>
-                <button class="btn-card">Comprar</button>
-            </div>
-
         </div>
     </div>
 </section>

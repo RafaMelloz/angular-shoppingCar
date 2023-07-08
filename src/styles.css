@@ -16,6 +16,9 @@
     --shadowInput: 0 0 5px rgba(255, 255, 255, 0.952);
 
     --cardColor:#363636;
+
+    --bgScroll:#444343;
+    --bgScrollThumb: #a1a0a0;
 }
 
 :root .ligthMode{
@@ -26,6 +29,19 @@
     --shadowInput: 0 0 5px rgba(255, 255, 255, 0.952);
 
     --cardColor: #efefef;
+
+    --bgScroll: #a1a0a0;
+    --bgScrollThumb: #444343;
+}
+
+::-webkit-scrollbar{
+    background-color: var(--bgScroll);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--bgScrollThumb);
+    border-radius: 10px;
 }
 
 html,body{
