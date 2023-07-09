@@ -33,6 +33,7 @@ input-busca{
     display: flex;
     position: relative;
     width: 45px;
+    cursor: pointer;
 }
 .carrinhoCompras h1{
     color: white;

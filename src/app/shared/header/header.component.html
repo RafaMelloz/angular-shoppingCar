@@ -1,10 +1,11 @@
 <header>
     <div class="containerHeader">
         <h2 class="logo">Shopping<b>Car<i class="fa fa-shopping-cart" aria-hidden="true"></i></b></h2>
-        <input-busca></input-busca>
-        <div class="carrinhoCompras">
+        <div class="carrinhoCompras" (click)="toggleDisplay()">
             <h1><i class="fa fa-shopping-cart" aria-hidden="true"></i></h1>
-            <span>0</span>
+            <span *ngIf="qntCarrinhodeCompras.length != 0">{{qntCarrinhodeCompras.length}}</span>
         </div>
     </div>
+    
 </header>
+<carrinhoCompras *ngIf="mostrar"></carrinhoCompras>

@@ -1,0 +1,11 @@
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: var(--bodyColor);
+
+}
+
+footer a{
+    text-decoration: none;
+    color: #1324a5;
+}

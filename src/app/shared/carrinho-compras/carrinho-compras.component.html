@@ -1,0 +1,17 @@
+<aside class="boxCarrinho">
+    <h1 *ngIf="conteudoCarrinho.length == 0" class="msg">Carrinho vazio :C</h1>
+
+    <div *ngIf="conteudoCarrinho.length != 0">
+        <div class="conteudoCarrinho" *ngFor="let box of conteudoCarrinho; let i = index">
+            <img [src]=" box.imagemProduto" [alt]="box.nomeProduto">
+            <div class="group">
+                <h3>{{box.quantidade}} - {{box.nomeProduto}}</h3>
+                <span>{{box.precoProduto | currency:'R$ ':'symbol':'1.2-2'}} </span>
+                <h3></h3>
+            </div>
+            <button class="btn-trash" (click)="apagarItem(i)"><i class="fa fa-trash" aria-hidden="true"></i></button>
+        </div>
+        
+        <h1 class="msg">Valor da compra: {{somaPrecos() | currency:'R$ ':'symbol':'1.2-2'}}</h1>
+    </div>
+</aside>

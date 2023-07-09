@@ -11,27 +11,31 @@
 :root{
     --bodyColor:rgb(12, 12, 12);
     --textColor:white;
+    --bgScroll: #444343;
+    --bgScrollThumb: #a1a0a0;
 
     --placeholderColor:rgb(214, 214, 214);
     --shadowInput: 0 0 5px rgba(255, 255, 255, 0.952);
 
     --cardColor:#363636;
 
-    --bgScroll:#444343;
-    --bgScrollThumb: #a1a0a0;
+    --boxColor:black;
+    --boxDivisorColor: white;
 }
 
 :root .ligthMode{
     --bodyColor: rgb(255, 255, 255);
     --textColor: black;
+    --bgScroll: #a1a0a0;
+    --bgScrollThumb: #444343;
 
     --placeholderColor:rgb(58, 58, 58);
     --shadowInput: 0 0 5px rgba(255, 255, 255, 0.952);
 
     --cardColor: #efefef;
 
-    --bgScroll: #a1a0a0;
-    --bgScrollThumb: #444343;
+    --boxColor: rgb(194, 194, 194);
+    --boxDivisorColor:black;
 }
 
 ::-webkit-scrollbar{
